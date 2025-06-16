@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Email Verificitaion</title>
+</head>
+<body>
+    <div>
+        <p>Hi,</p>
+        <p>
+            We received a request to sign up using this email address. If you want to sign in with your <%=userMail %> account, click this link:
+        </p>
+        <p>
+            <a href="<%=verificationLink %>">
+                Sign up
+            </a>
+        </p>
+        <p>
+            If you did not request this link, you can safely ignore this email.
+        </p>
+        <p>
+            Thanks,
+        </p>
+    </div>
+</body>
+</html>

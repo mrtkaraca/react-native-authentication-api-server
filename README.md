@@ -1,0 +1,12 @@
+## .env file configure for development
+```
+    SERVER
+    SERVER_PORT
+    SERVER_IP
+    JWT_SECRET_KEY
+    AUTHORIZATION_API_KEY
+    NODEMAILER_HOST
+    NODEMAILER_PORT
+    NODEMAILER_USER
+    NODEMAILER_PASS
+```

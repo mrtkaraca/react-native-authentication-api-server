@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    max-width: 100vw;
+    overflow-x: hidden;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+.mainContainer{
+   
+}
+.innerContainer{
+    margin: auto;
+    max-width: 390px;
+    background: #fff;
+    box-shadow: 0.15em 0.15em 1.2em rgba(0,0,0,.2);
+    border-radius: 2em;
+    text-align: center;
+    padding: 3.5em 2.5em 3.5em;
+}
+p{
+    font-size: 1.2em;
+    line-height: 1.8em;
+    text-align: center;
+    letter-spacing: .02em;
+    color: #0a2155;
+    word-break: break-word;
+    padding: 0.4em;
+    margin-left: 45px;
+    margin-right: 45px;
+    word-break:keep-all;
+    
+}
+.xCircle, .checkCircle{
+    width: 4rem;
+}
+.xCircle{
+    filter: invert(19%) sepia(75%) saturate(7032%) hue-rotate(1deg) brightness(93%) contrast(124%);
+}
+.checkCircle{
+    filter: invert(63%) sepia(54%) saturate(5610%) hue-rotate(86deg) brightness(123%) contrast(118%);
+}
+@media screen and (max-width:600px) {
+    .innerContainer{
+       width: 75vw;
+       border-radius: 5vw;
+       padding: 8vw 5vw 5vw;
+    }
+    p{
+        font-size: 3.3vw;
+        
+    }
+    .xCircle, .checkCircle{
+        width: 10.5vw;
+    }
+
+}

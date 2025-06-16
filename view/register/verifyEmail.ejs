@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="../../view/register/style.css">
+    <title>Verify Email</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="innerContainer">
+            <div>
+                <%- successful ?
+                    '<img class="checkCircle" src="../../assets/check-circle.png">' 
+                    : 
+                    '<img class="xCircle" src="../../assets/x-circle.png">'
+                %>
+            </div>
+            <div>
+                <p><%= message %></p>
+            </div>
+            <div>
+                <p>
+                    <%- successful ?
+                        '<a href="authentication://authentication/register/userValidateEmail">Turn back to app.</a>' 
+                        : 
+                        '<a href="authentication://authentication">Turn back to app.</a>' 
+                    %>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
